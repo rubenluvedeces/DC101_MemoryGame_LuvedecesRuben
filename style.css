@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #1f1b2b;
+  color: #48ffe4;
+  font-family: 'Orbitron', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  letter-spacing: 2px;
+}
+
+.game-info {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+button {
+  border: 1px solid #0fffc1;
+  background: transparent;
+  color: #0fffc1;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 12px;
+}
+
+.card {
+  width: 70px;
+  height: 70px;
+  background: #3a2f57;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card .content {
+  font-size: 32px;
+  display: none;
+}
+
+.card.revealed .content,
+.card.matched .content {
+  display: block;
+}
+
+.card.revealed,
+.card.matched {
+  background: #6f4a9d;
+}
+
+.leaderboard {
+  width: 320px;
+  margin-top: 30px;
+  border-top: 1px solid #0fffc1;
+  padding-top: 15px;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard li {
+  background: #3a2f57;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+/* 🥇🥈🥉 MEDALS */
+.leaderboard li:nth-child(1) {
+  border-left: 6px solid gold;
+  background: linear-gradient(90deg, #ffd70033, #3a2f57);
+}
+.leaderboard li:nth-child(2) {
+  border-left: 6px solid silver;
+  background: linear-gradient(90deg, #c0c0c033, #3a2f57);
+}
+.leaderboard li:nth-child(3) {
+  border-left: 6px solid #cd7f32;
+  background: linear-gradient(90deg, #cd7f3233, #3a2f57);
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #3a2f57;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.modal input {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 12px;
+  background: #1f1b2b;
+  border: none;
+  color: #0fffc1;
+}
+
+#confettiCanvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
