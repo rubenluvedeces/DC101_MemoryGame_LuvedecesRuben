@@ -10,14 +10,8 @@
 - *JavaScript* - Game logic, timer, leaderboard, and confetti effects
 
 # Instruction to Run the Game
-1. Make sure the following files are in the same folder:
-	- index.html
-	- style.css
-	- script.js
-2. Open the file 'index.html' using web browser.
-3. The game will start automatically once the page loads.
-
-4. Click on the cards to begin playing.
-
-# Link to Github pages
+1. Open any modern web browser (Chrome, Edge, Firefox).
+2. Visit the live game link hosted on GitHub Pages:
 https://rubenluvedeces.github.io/DC101_MemoryGame_LuvedecesRuben/
+3. The game will load automatically.
+4. Click on the cards to start playing
