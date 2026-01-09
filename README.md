@@ -16,4 +16,8 @@
 	- script.js
 2. Open the file 'index.html' using web browser.
 3. The game will start automatically once the page loads.
+
 4. Click on the cards to begin playing.
+
+# Link to Github pages
+https://rubenluvedeces.github.io/DC101_MemoryGame_LuvedecesRuben/
